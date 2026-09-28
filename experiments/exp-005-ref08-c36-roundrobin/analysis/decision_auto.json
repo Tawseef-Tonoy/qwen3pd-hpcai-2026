@@ -1,0 +1,7 @@
+{
+  "mode": "official",
+  "warmup_contamination_detected": false,
+  "status": "FAIL",
+  "best_concurrency": 36,
+  "next_action": "Official SLA failed. Dominant limitation: Decode / ITL. Optimize the corresponding serving path before another official validation."
+}
