@@ -2,7 +2,7 @@
 #SBATCH -J p6-tp2-d1-tp4-235b-bench
 #SBATCH -p hpcai
 #SBATCH -N 2
-#SBATCH -t 00:20:00
+#SBATCH -t 00:17:00
 #SBATCH --gres=gpu:8
 #SBATCH --propagate=NONE
 #SBATCH -o runs/%j.out
