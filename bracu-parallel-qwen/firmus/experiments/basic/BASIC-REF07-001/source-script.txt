@@ -1,0 +1,1 @@
+/home/apacsc04/bracu-parallel-qwen/external/firmus-reference/firmus-20260928-052951/07-pd-235b-8plus8.sbatch

@@ -1,0 +1,101 @@
+BASIC-REF07-001 — SLA Analysis
+Date: 2026-09-28
+Job: 20003
+Source: frozen Firmus reference 07
+
+SLA thresholds:
+  TTFT <= 3000 ms
+  average ITL <= 20 ms
+  good_request_fraction >= 0.90
+
+Derived from profiling records:
+
+C8:
+  sent=62
+  completed=56
+  cancelled=6
+  good=43
+  GFR(completed)=0.767857
+  GFR(sent)=0.693548
+  goodput=0.5733 req/s
+  good_output_tokens_per_second=114.67
+  TTFT_pass=43/56
+  ITL_pass=56/56
+
+C16:
+  sent=91
+  completed=91
+  cancelled=0
+  good=55
+  GFR=0.604396
+  goodput=0.8687 req/s
+  good_output_tokens_per_second=173.75
+  TTFT_pass=55/91
+  ITL_pass=91/91
+
+C40:
+  sent=336
+  completed=336
+  cancelled=0
+  good=266
+  GFR=0.791667
+  goodput=4.1228 req/s
+  good_output_tokens_per_second=824.55
+  TTFT_pass=266/336
+  ITL_pass=336/336
+
+C48:
+  sent=535
+  completed=535
+  cancelled=0
+  good=438
+  GFR=0.818692
+  goodput=6.6213 req/s
+  good_output_tokens_per_second=1324.26
+  TTFT_pass=438/535
+  ITL_pass=534/535
+
+C56:
+  sent=579
+  completed=579
+  cancelled=0
+  good=423
+  GFR=0.730570
+  goodput=6.4987 req/s
+  good_output_tokens_per_second=1299.74
+  TTFT_pass=444/579
+  ITL_pass=555/579
+
+Findings:
+
+1. None of the exploratory REF07 sweep points achieved GFR >= 0.90.
+
+2. C48 produced the highest SLA-qualified throughput among tested points:
+     6.6213 good req/s
+     1324.26 good output tokens/s
+
+3. At C48, TTFT is the effective SLA bottleneck.
+   ITL passed for 534/535 completed requests.
+
+4. C56 increased raw offered concurrency but reduced SLA-qualified
+   throughput relative to C48 and introduced additional ITL failures.
+
+5. C8 exhibited six grace-period cancellations correlated with six
+   requests resident in the P/D bootstrap/transfer path at cancellation.
+
+6. The visible KVTransferError/AbortReq messages following C8 timeout
+   are treated as consequences of cancellation, not proven causes of
+   the preceding stall.
+
+7. REF07 uses exploratory 20/60/15 timing. Therefore these results do
+   not establish performance under the official 60/120/30 benchmark.
+
+Next controlled experiment:
+
+  BASIC-OFFICIAL-C48-001
+
+Purpose:
+
+  Keep the verified REF07 serving configuration unchanged and test C48
+  using the official benchmark timing before introducing serving-side
+  optimization.

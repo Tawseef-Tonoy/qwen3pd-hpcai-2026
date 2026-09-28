@@ -1,0 +1,82 @@
+=== BRACU 235B P/D BASELINE ===
+Sun Sep 27 05:36:30 UTC 2026
+JOB=19782
+NODELIST=g[1,4]
+MODEL=/scratch/models/Qwen3-235B-A22B-Instruct-2507-FP8
+RUN_DIR=/home/apacsc04/qwen235b-phase2/results/run-19782
+ALLOCATED NODE: g1
+ALLOCATED NODE: g4
+HEAD_NODE=g1 HEAD_IP=198.18.151.51
+TAIL_NODE=g4 TAIL_IP=198.18.151.54
+REPO_COMMIT=5a67229942589c9559a8ba5e404bbd08ae91c6e2
+mlx5_0 port 1 ==> ibp26s0 (Up)
+mlx5_1 port 1 ==> ens40f0np0 (Up)
+mlx5_2 port 1 ==> ens40f1np1 (Up)
+mlx5_3 port 1 ==> ibp60s0 (Up)
+mlx5_4 port 1 ==> ibp77s0 (Up)
+mlx5_5 port 1 ==> ibp94s0 (Up)
+mlx5_6 port 1 ==> ibp156s0 (Up)
+mlx5_7 port 1 ==> ibp188s0 (Up)
+mlx5_8 port 1 ==> ibp204s0 (Up)
+mlx5_9 port 1 ==> ibp220s0 (Up)
+mlx5_0 port 1 ==> ibp27s0 (Up)
+mlx5_1 port 1 ==> ens40f0np0 (Up)
+mlx5_2 port 1 ==> ens40f1np1 (Up)
+mlx5_3 port 1 ==> ibp65s0 (Up)
+mlx5_4 port 1 ==> ibp84s0 (Up)
+mlx5_5 port 1 ==> ibp103s0 (Up)
+mlx5_6 port 1 ==> ibp157s0 (Up)
+mlx5_7 port 1 ==> ibp193s0 (Up)
+mlx5_8 port 1 ==> ibp211s0 (Up)
+mlx5_9 port 1 ==> ibp229s0 (Up)
+UCX_NET_DEVICES[g1]=mlx5_0:1
+UCX_NET_DEVICES[g4]=mlx5_0:1
+
+=== START PREFILL STEP: 4 tasks x 2 H200 ===
+PREFILL_STEP_PID=1286217
+
+=== START DECODE STEP: 2 tasks x 4 H200 ===
+DECODE_STEP_PID=1286289
+
+=== WAIT FOR ALL SIX WORKERS ===
+Waiting for prefill-0: http://198.18.151.51:30100/health
+HEALTHY: prefill-0 at t=260s
+Waiting for prefill-1: http://198.18.151.51:30101/health
+HEALTHY: prefill-1 at t=261s
+Waiting for prefill-2: http://198.18.151.51:30102/health
+HEALTHY: prefill-2 at t=262s
+Waiting for prefill-3: http://198.18.151.51:30103/health
+HEALTHY: prefill-3 at t=263s
+Waiting for decode-0: http://198.18.151.54:30200/health
+HEALTHY: decode-0 at t=264s
+Waiting for decode-1: http://198.18.151.54:30201/health
+HEALTHY: decode-1 at t=265s
+
+=== ALL WORKERS HEALTHY ===
+
+=== START ROUTER ===
+ROUTER_STEP_PID=1292179
+Waiting for router: http://198.18.151.51:8000/health
+HEALTHY: router at t=307s
+
+=== /v1/models THROUGH ROUTER ===
+{"object":"list","data":[{"id":"qwen","object":"model","owned_by":"local"}]}
+
+=== FUNCTIONAL STREAMING REQUEST THROUGH P/D ROUTER ===
+data: {"id":"8e017f5057a74229bfbd9d86da668800","object":"chat.completion.chunk","created":1790487721,"model":"qwen","choices":[{"index":0,"delta":{"reasoning_content":null,"role":"assistant","content":""},"logprobs":null,"finish_reason":null,"matched_stop":null}]}
+
+data: {"id":"8e017f5057a74229bfbd9d86da668800","object":"chat.completion.chunk","created":1790487721,"model":"qwen","choices":[{"index":0,"delta":{"reasoning_content":null,"content":"BASE"},"logprobs":null,"finish_reason":null,"matched_stop":null}]}
+
+data: {"id":"8e017f5057a74229bfbd9d86da668800","object":"chat.completion.chunk","created":1790487721,"model":"qwen","choices":[{"index":0,"delta":{"reasoning_content":null,"content":"LINE"},"logprobs":null,"finish_reason":null,"matched_stop":null}]}
+
+data: {"id":"8e017f5057a74229bfbd9d86da668800","object":"chat.completion.chunk","created":1790487721,"model":"qwen","choices":[{"index":0,"delta":{"reasoning_content":null,"content":"_OK"},"logprobs":null,"finish_reason":null,"matched_stop":null}]}
+
+data: {"id":"8e017f5057a74229bfbd9d86da668800","object":"chat.completion.chunk","created":1790487721,"model":"qwen","choices":[{"index":0,"delta":{"reasoning_content":null},"logprobs":null,"finish_reason":"stop","matched_stop":151645}]}
+
+data: [DONE]
+
+
+
+=== 235B P/D FUNCTIONAL BASELINE PASS ===
+Artifacts: /home/apacsc04/qwen235b-phase2/results/run-19782
+=== CLEANUP ===

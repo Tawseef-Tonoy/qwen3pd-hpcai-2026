@@ -1,0 +1,80 @@
+  File: /scratch/reference-scripts/01-smoke-image.sbatch
+  Size: 944       	Blocks: 2          IO Block: 524288 regular file
+Device: 31h/49d	Inode: 5546219998370335386  Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/ pengzhi)   Gid: (   20/   games)
+Access: 2026-09-27 08:50:21.000000000 +0000
+Modify: 2026-08-24 02:34:32.000000000 +0000
+Change: 2026-08-24 02:51:59.000000000 +0000
+ Birth: -
+  File: /scratch/reference-scripts/02-smoke-serve.sbatch
+  Size: 1443      	Blocks: 3          IO Block: 524288 regular file
+Device: 31h/49d	Inode: 9013661399188471334  Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/ pengzhi)   Gid: (   20/   games)
+Access: 2026-09-27 09:16:44.000000000 +0000
+Modify: 2026-08-24 02:34:37.000000000 +0000
+Change: 2026-08-24 02:51:59.000000000 +0000
+ Birth: -
+  File: /scratch/reference-scripts/03-smoke-serve-aiperf.sbatch
+  Size: 1804      	Blocks: 4          IO Block: 524288 regular file
+Device: 31h/49d	Inode: 111625556395227178  Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/ pengzhi)   Gid: (   20/   games)
+Access: 2026-09-27 09:30:10.000000000 +0000
+Modify: 2026-08-24 02:34:44.000000000 +0000
+Change: 2026-08-24 02:51:59.000000000 +0000
+ Birth: -
+  File: /scratch/reference-scripts/04-pd-minimal-2node.sbatch
+  Size: 3861      	Blocks: 8          IO Block: 524288 regular file
+Device: 31h/49d	Inode: 3621825104900189437  Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/ pengzhi)   Gid: (   20/   games)
+Access: 2026-09-27 22:35:13.000000000 +0000
+Modify: 2026-08-24 02:34:50.000000000 +0000
+Change: 2026-08-24 02:51:59.000000000 +0000
+ Birth: -
+  File: /scratch/reference-scripts/05-pd-tp-variant-1node.sbatch
+  Size: 3878      	Blocks: 8          IO Block: 524288 regular file
+Device: 31h/49d	Inode: 7850827871057007520  Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/ pengzhi)   Gid: (   20/   games)
+Access: 2026-09-27 14:11:47.000000000 +0000
+Modify: 2026-08-24 02:34:56.000000000 +0000
+Change: 2026-08-24 02:51:59.000000000 +0000
+ Birth: -
+  File: /scratch/reference-scripts/06-pd-moe-example.sbatch
+  Size: 6232      	Blocks: 13         IO Block: 524288 regular file
+Device: 31h/49d	Inode: 743853816767389713  Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/ pengzhi)   Gid: (   20/   games)
+Access: 2026-09-27 14:11:47.000000000 +0000
+Modify: 2026-08-24 02:35:14.000000000 +0000
+Change: 2026-08-24 02:51:59.000000000 +0000
+ Birth: -
+  File: /scratch/reference-scripts/07-pd-235b-8plus8.sbatch
+  Size: 6870      	Blocks: 14         IO Block: 524288 regular file
+Device: 31h/49d	Inode: 15371727749722969713  Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/ pengzhi)   Gid: (   20/   games)
+Access: 2026-09-27 09:47:59.000000000 +0000
+Modify: 2026-08-24 02:37:13.000000000 +0000
+Change: 2026-08-24 02:51:59.000000000 +0000
+ Birth: -
+  File: /scratch/reference-scripts/08-pd-235b-12plus4-dynamo-match.sbatch
+  Size: 7396      	Blocks: 15         IO Block: 524288 regular file
+Device: 31h/49d	Inode: 6389665414629954509  Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/ pengzhi)   Gid: (   20/   games)
+Access: 2026-09-27 11:35:15.000000000 +0000
+Modify: 2026-08-24 02:37:26.000000000 +0000
+Change: 2026-08-24 02:51:59.000000000 +0000
+ Birth: -
+  File: /scratch/reference-scripts/09-pd-235b-fatp-peak-bench.sbatch
+  Size: 6136      	Blocks: 12         IO Block: 524288 regular file
+Device: 31h/49d	Inode: 15974088206989842160  Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/ pengzhi)   Gid: (   20/   games)
+Access: 2026-09-27 11:35:15.000000000 +0000
+Modify: 2026-08-24 02:35:51.000000000 +0000
+Change: 2026-08-24 02:51:59.000000000 +0000
+ Birth: -
+  File: /scratch/reference-scripts/README.md
+  Size: 3787      	Blocks: 8          IO Block: 524288 regular file
+Device: 31h/49d	Inode: 1407666580884749053  Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1000/ pengzhi)   Gid: (   20/   games)
+Access: 2026-09-27 09:59:17.000000000 +0000
+Modify: 2026-08-24 02:36:13.000000000 +0000
+Change: 2026-08-24 02:51:59.000000000 +0000
+ Birth: -
