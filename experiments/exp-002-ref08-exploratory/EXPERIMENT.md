@@ -146,3 +146,25 @@ Pending.
 ## Next Experiment
 
 Pending.
+
+---
+
+# Experiment Closure
+
+Status: **COMPLETE**
+
+See `REPORT.md` for full results and analysis.
+
+Primary findings:
+
+1. Strong transient/warm-up effects were observed at C8, C16 and C32.
+2. Warm C32 achieved 95.6% TTFT pass and 100% ITL pass.
+3. C40 achieved excellent warmed TTFT but only 43.7% second-half ITL pass.
+4. C48 further overloaded Decode.
+5. REF08 shifts the bottleneck from the pre-first-token path toward Decode.
+6. The useful concurrency search interval is between C32 and C40.
+
+Decision:
+
+Continue with REF08 and perform a finer concurrency search with longer
+warm-up before conducting the next official-duration validation.
