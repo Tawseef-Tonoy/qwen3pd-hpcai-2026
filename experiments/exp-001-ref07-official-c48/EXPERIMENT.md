@@ -1,0 +1,115 @@
+# EXP-001 — REF07 C48 Official-Timing Validation
+
+## Status
+
+READY TO RUN
+
+## Objective
+
+Determine whether the frozen Firmus REF07 serving configuration at
+concurrency 48 satisfies the competition SLA under the official benchmark
+timing.
+
+## Background
+
+Previous REF07 exploratory testing found C48 to be the highest-goodput
+tested point.
+
+Exploratory C48:
+
+- completed requests: 535
+- good requests: 438
+- good_request_fraction: 0.818692
+- diagnostic goodput: 6.6213 req/s
+- diagnostic good output throughput: 1324.26 tokens/s
+- TTFT average: 2117.02 ms
+- TTFT p90: 3543.90 ms
+- TTFT p99: 9535.65 ms
+- ITL average: 17.65 ms
+- ITL p99: 19.83 ms
+
+The exploratory run did not satisfy GFR >= 0.90.
+
+TTFT was the dominant SLA failure while ITL was almost entirely within
+the 20 ms threshold.
+
+## Question
+
+Can REF07 at concurrency 48 satisfy good_request_fraction >= 0.90 when
+evaluated using the official 60/120/30 benchmark timing?
+
+## Hypothesis
+
+The longer official warm-up and benchmark period may reduce the influence
+of startup/transient behavior.
+
+If GFR remains below 0.90 and TTFT remains the dominant failure, the next
+experiment should investigate a Prefill-oriented serving topology rather
+than Decode tuning.
+
+## Serving Configuration
+
+UNCHANGED from organizer REF07.
+
+Do not modify:
+
+- Prefill/Decode GPU allocation
+- TP
+- EP
+- NIXL
+- IB/UCX configuration
+- router
+- memory configuration
+- scheduling configuration
+- max-running-requests
+- model
+
+## Benchmark Configuration
+
+- concurrency = 48
+- workers-max = 48
+- warmup-duration = 60 seconds
+- benchmark-duration = 120 seconds
+- benchmark-grace-period = 30 seconds
+- synthetic input = 4000 tokens
+- output = 200 tokens
+- seed = 2026
+- cache bust = first_turn_prefix
+- TTFT SLA = 3000 ms
+- average ITL SLA = 20 ms
+
+## Decision Rule
+
+### PASS
+
+If:
+
+good_request_fraction >= 0.90
+
+Then REF07 C48 becomes the official baseline configuration.
+
+Record its goodput and good output token throughput and attempt to improve
+on it in subsequent experiments.
+
+### FAIL
+
+If:
+
+good_request_fraction < 0.90
+
+and TTFT remains the primary failure while ITL mostly passes,
+
+then the next experiment will investigate a Prefill-oriented configuration,
+most likely REF08 (12+4).
+
+## Results
+
+Pending.
+
+## Interpretation
+
+Pending.
+
+## Decision
+
+Pending.
