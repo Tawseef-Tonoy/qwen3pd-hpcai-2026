@@ -1,0 +1,13 @@
+JobID           JobName      State    Elapsed  Timelimit ExitCode        NodeList 
+------------ ---------- ---------- ---------- ---------- -------- --------------- 
+20165        exp009-8p+  COMPLETED   00:11:37   00:17:00      0:0          g[1,4] 
+20165.batch       batch  COMPLETED   00:11:37                 0:0              g1 
+20165.extern     extern  COMPLETED   00:11:42                 0:0          g[1,4] 
+20165.0            bash CANCELLED+   00:11:39                 0:9              g1 
+20165.1            bash CANCELLED+   00:11:39                 0:9              g1 
+20165.2            bash CANCELLED+   00:11:43                 0:9              g1 
+20165.3            bash CANCELLED+   00:11:37                 0:9              g4 
+20165.4            bash CANCELLED+   00:11:43                 0:9              g1 
+20165.5            bash CANCELLED+   00:11:37                 0:9              g4 
+20165.6         python3 CANCELLED+   00:08:14                 0:9              g1 
+20165.7          aiperf  COMPLETED   00:07:39                 0:0              g1 
