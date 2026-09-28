@@ -100,3 +100,32 @@ Pending.
 ## Decision
 
 Pending.
+
+---
+
+# Experiment Closure
+
+Status: **COMPLETE**
+
+Full profiling GFR:
+
+- C32: 0.574
+- C34: 0.341
+- C36: 0.786
+- C38: 0.500
+
+Key findings:
+
+1. No full exploratory run achieved GFR >= 0.90.
+2. C36 underwent a strong transition: deciles 4-10 achieved 100% TTFT
+   pass and 100% ITL pass.
+3. C38 eventually achieved healthy TTFT but became Decode/ITL limited.
+4. C36 is therefore the strongest candidate for a single-point official
+   validation.
+5. Sequential-sweep and temporal effects remain important.
+
+Decision:
+
+Validate REF08 C36 alone using the exact official 60/120/30 benchmark.
+
+See `REPORT.md`, `REPORT_AUTO.md`, and `analysis/` for details.

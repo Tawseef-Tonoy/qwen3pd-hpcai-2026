@@ -1,0 +1,56 @@
+
+========================================================================
+C32 — chronological deciles
+========================================================================
+ 1/10 n=  5 TTFTavg=  4497.6 TTFTpass=  0.0% ITLavg= 16.47 ITLpass=100.0% GFR=  0.0%
+ 2/10 n=  5 TTFTavg=  6326.4 TTFTpass=  0.0% ITLavg= 16.61 ITLpass=100.0% GFR=  0.0%
+ 3/10 n=  6 TTFTavg=  5162.9 TTFTpass= 16.7% ITLavg= 16.34 ITLpass=100.0% GFR= 16.7%
+ 4/10 n=  5 TTFTavg=  2934.7 TTFTpass= 80.0% ITLavg= 14.98 ITLpass=100.0% GFR= 80.0%
+ 5/10 n=  6 TTFTavg=  3766.9 TTFTpass= 50.0% ITLavg= 15.65 ITLpass=100.0% GFR= 50.0%
+ 6/10 n=  5 TTFTavg=  3843.0 TTFTpass= 20.0% ITLavg= 16.33 ITLpass=100.0% GFR= 20.0%
+ 7/10 n=  5 TTFTavg=   484.2 TTFTpass=100.0% ITLavg= 10.54 ITLpass=100.0% GFR=100.0%
+ 8/10 n=  6 TTFTavg=   386.5 TTFTpass=100.0% ITLavg= 10.28 ITLpass=100.0% GFR=100.0%
+ 9/10 n=  5 TTFTavg=   382.9 TTFTpass=100.0% ITLavg= 10.27 ITLpass=100.0% GFR=100.0%
+10/10 n=  6 TTFTavg=   382.5 TTFTpass=100.0% ITLavg= 10.27 ITLpass=100.0% GFR=100.0%
+
+========================================================================
+C34 — chronological deciles
+========================================================================
+ 1/10 n= 18 TTFTavg=  4017.9 TTFTpass= 44.4% ITLavg= 15.71 ITLpass=100.0% GFR= 44.4%
+ 2/10 n= 18 TTFTavg=  5514.8 TTFTpass=  5.6% ITLavg= 16.32 ITLpass=100.0% GFR=  5.6%
+ 3/10 n= 18 TTFTavg=  9314.0 TTFTpass=  0.0% ITLavg= 16.52 ITLpass=100.0% GFR=  0.0%
+ 4/10 n= 18 TTFTavg=  8107.8 TTFTpass= 22.2% ITLavg= 16.47 ITLpass=100.0% GFR= 22.2%
+ 5/10 n= 19 TTFTavg= 22295.0 TTFTpass= 10.5% ITLavg= 16.31 ITLpass=100.0% GFR= 10.5%
+ 6/10 n= 18 TTFTavg= 19101.0 TTFTpass= 22.2% ITLavg= 16.19 ITLpass=100.0% GFR= 22.2%
+ 7/10 n= 18 TTFTavg=  7200.3 TTFTpass= 77.8% ITLavg= 12.65 ITLpass=100.0% GFR= 77.8%
+ 8/10 n= 18 TTFTavg= 17296.8 TTFTpass= 44.4% ITLavg= 16.40 ITLpass=100.0% GFR= 44.4%
+ 9/10 n= 18 TTFTavg= 14843.4 TTFTpass= 50.0% ITLavg= 16.16 ITLpass=100.0% GFR= 50.0%
+10/10 n= 19 TTFTavg=  9520.8 TTFTpass= 63.2% ITLavg= 14.71 ITLpass=100.0% GFR= 63.2%
+
+========================================================================
+C36 — chronological deciles
+========================================================================
+ 1/10 n= 12 TTFTavg=  4386.5 TTFTpass= 50.0% ITLavg= 16.54 ITLpass=100.0% GFR= 50.0%
+ 2/10 n= 13 TTFTavg=  4524.1 TTFTpass= 15.4% ITLavg= 17.26 ITLpass=100.0% GFR= 15.4%
+ 3/10 n= 12 TTFTavg=  4783.2 TTFTpass= 16.7% ITLavg= 17.78 ITLpass=100.0% GFR= 16.7%
+ 4/10 n= 13 TTFTavg=   588.3 TTFTpass=100.0% ITLavg= 17.78 ITLpass=100.0% GFR=100.0%
+ 5/10 n= 13 TTFTavg=   566.4 TTFTpass=100.0% ITLavg= 15.35 ITLpass=100.0% GFR=100.0%
+ 6/10 n= 12 TTFTavg=   384.2 TTFTpass=100.0% ITLavg= 12.63 ITLpass=100.0% GFR=100.0%
+ 7/10 n= 13 TTFTavg=   389.4 TTFTpass=100.0% ITLavg= 12.36 ITLpass=100.0% GFR=100.0%
+ 8/10 n= 12 TTFTavg=   384.6 TTFTpass=100.0% ITLavg= 12.33 ITLpass=100.0% GFR=100.0%
+ 9/10 n= 13 TTFTavg=   385.8 TTFTpass=100.0% ITLavg= 12.27 ITLpass=100.0% GFR=100.0%
+10/10 n= 13 TTFTavg=   458.4 TTFTpass=100.0% ITLavg= 12.23 ITLpass=100.0% GFR=100.0%
+
+========================================================================
+C38 — chronological deciles
+========================================================================
+ 1/10 n= 30 TTFTavg=  4577.3 TTFTpass= 30.0% ITLavg= 17.27 ITLpass=100.0% GFR= 30.0%
+ 2/10 n= 31 TTFTavg= 11565.7 TTFTpass= 38.7% ITLavg= 18.00 ITLpass=100.0% GFR= 38.7%
+ 3/10 n= 31 TTFTavg= 10101.3 TTFTpass= 61.3% ITLavg= 18.17 ITLpass=100.0% GFR= 61.3%
+ 4/10 n= 31 TTFTavg=  7031.7 TTFTpass= 71.0% ITLavg= 16.54 ITLpass= 87.1% GFR= 71.0%
+ 5/10 n= 31 TTFTavg=   810.8 TTFTpass= 96.8% ITLavg= 17.66 ITLpass= 54.8% GFR= 54.8%
+ 6/10 n= 30 TTFTavg=  1139.8 TTFTpass=100.0% ITLavg= 19.79 ITLpass= 50.0% GFR= 50.0%
+ 7/10 n= 31 TTFTavg=  1184.1 TTFTpass=100.0% ITLavg= 20.04 ITLpass= 32.3% GFR= 32.3%
+ 8/10 n= 31 TTFTavg=  1211.3 TTFTpass=100.0% ITLavg= 20.04 ITLpass= 41.9% GFR= 41.9%
+ 9/10 n= 31 TTFTavg=  1188.9 TTFTpass=100.0% ITLavg= 20.18 ITLpass= 35.5% GFR= 35.5%
+10/10 n= 31 TTFTavg=  1287.1 TTFTpass=100.0% ITLavg= 18.72 ITLpass= 83.9% GFR= 83.9%
