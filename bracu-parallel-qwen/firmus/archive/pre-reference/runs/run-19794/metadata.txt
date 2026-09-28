@@ -1,0 +1,16 @@
+job_id=19794
+date_utc=2026-09-27T06:17:56Z
+repo_commit=5a67229942589c9559a8ba5e404bbd08ae91c6e2
+
+head_node=g1
+head_ip=198.18.151.51
+head_ucx_device=mlx5_0:1
+
+tail_node=g4
+tail_ip=198.18.151.54
+tail_ucx_device=mlx5_0:1
+
+model=/scratch/models/Qwen3-235B-A22B-Instruct-2507-FP8
+sglang_image=/scratch/enroot-images/sglang-harbor.sqsh
+
+layout=4x_prefill_tp2__2x_decode_tp4_ep4

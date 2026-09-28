@@ -1,0 +1,45 @@
+# ============================================================
+# BRACU Parallel Qwen — generated/runtime data
+# ============================================================
+
+# Container/runtime HOME directories.
+# These contain caches, compiled kernels, runtime state and
+# sometimes container-created paths not readable on the login node.
+runs/**/home/
+
+# AIPerf generated synthetic datasets.
+# These are ~218 MiB each and must not enter normal Git history.
+**/inputs.json
+
+# Runtime/JIT/cache material anywhere in the tree.
+**/.cache/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# Temporary scratch area.
+scratch/*
+
+# Preserve scratch documentation if we intentionally add any later.
+!scratch/README.md
+
+# Large container images / model artifacts if accidentally copied here.
+*.sqsh
+*.sif
+*.img
+
+# Common model weight formats.
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# Editor / OS noise.
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Slurm transient files outside deliberately preserved run evidence.
+slurm-*.out

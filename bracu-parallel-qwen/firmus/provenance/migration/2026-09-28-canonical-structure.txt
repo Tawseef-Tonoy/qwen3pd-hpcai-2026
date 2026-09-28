@@ -1,0 +1,102 @@
+migration_stage=4-canonical-structure
+date_utc=2026-09-28T06:17:34Z
+canonical_root=/home/apacsc04/bracu-parallel-qwen
+
+=== DIRECTORY STATE ===
+d analysis -> 
+d analysis/comparisons -> 
+d analysis/figures -> 
+d analysis/scripts -> 
+d analysis/tables -> 
+d archive -> 
+d archive/pre-reference -> 
+d archive/pre-reference/analysis -> 
+d archive/pre-reference/logs -> 
+d archive/pre-reference/notes -> 
+d archive/pre-reference/runs -> 
+d archive/pre-reference/scripts -> 
+d configs -> 
+d configs/basic -> 
+d configs/bonus -> 
+d configs/bonus/concurrency -> 
+d configs/bonus/network -> 
+d configs/bonus/nixl -> 
+d configs/bonus/pd-layout -> 
+d docs -> 
+d docs/decisions -> 
+d docs/findings -> 
+d docs/organizer -> 
+d docs/platform -> 
+d docs/rules -> 
+d experiments -> 
+d experiments/basic -> 
+d experiments/bonus -> 
+d external -> 
+d external/firmus-reference -> 
+d external/firmus-reference/firmus-20260928-052951 -> 
+d logs -> 
+d notes -> 
+d provenance -> 
+d provenance/checksums -> 
+d provenance/environment -> 
+d provenance/migration -> 
+d provenance/repo-state -> 
+d provenance/software-versions -> 
+d reference-scripts -> 
+d results -> 
+d runs -> 
+d runs/basic -> 
+d runs/bonus -> 
+d scratch -> 
+d scripts -> 
+d scripts/basic -> 
+d scripts/bonus -> 
+d scripts/bonus/concurrency -> 
+d scripts/bonus/cpu-numa -> 
+d scripts/bonus/memory -> 
+d scripts/bonus/network -> 
+d scripts/bonus/nixl -> 
+d scripts/bonus/pd-layout -> 
+d scripts/bonus/tp-ep -> 
+d scripts/lib -> 
+d scripts/tools -> 
+d submission -> 
+d submission/basic -> 
+d submission/bonus -> 
+d submission/evidence -> 
+d submission/final-report -> 
+f README.md -> 
+f archive/pre-reference/README.md -> 
+f docs/decisions/ADR-001-pre-reference-boundary.md -> 
+f docs/decisions/ADR-002-ref07-control.md -> 
+f docs/findings/FIRMUS-AIPERF-001-nixl-forensics.txt -> 
+f experiments/README.md -> 
+f external/firmus-reference/CURRENT_PATH.txt -> 
+f external/firmus-reference/README.md -> 
+f external/firmus-reference/legacy-snapshot-pointer.txt -> 
+f provenance/checksums/firmus-20260928-052951.sha256 -> 
+f provenance/checksums/firmus-reference-scripts-20260928-052951.sha256 -> 
+f provenance/environment/firmus-reference-scripts-20260928-052951.stat -> 
+f provenance/migration/2026-09-28-canonical-structure.txt -> 
+f provenance/migration/2026-09-28-stage3A-before.txt -> 
+f runs/README.md -> 
+l external/firmus-reference/CURRENT -> firmus-20260928-052951
+l logs/bracu-235b-aiperf-vanilla-19794.err -> ../archive/pre-reference/logs/bracu-235b-aiperf-vanilla-19794.err
+l logs/bracu-235b-aiperf-vanilla-19794.out -> ../archive/pre-reference/logs/bracu-235b-aiperf-vanilla-19794.out
+l logs/bracu-235b-pd-baseline-19782.err -> ../archive/pre-reference/logs/bracu-235b-pd-baseline-19782.err
+l logs/bracu-235b-pd-baseline-19782.out -> ../archive/pre-reference/logs/bracu-235b-pd-baseline-19782.out
+l logs/phase2-terminal-session.txt -> ../archive/pre-reference/logs/phase2-terminal-session.txt
+l notes/FIRMUS-AIPERF-001-nixl-forensics.txt -> ../docs/findings/FIRMUS-AIPERF-001-nixl-forensics.txt
+l notes/FIRMUS-QWEN235B-AIPERF-001-script.sha256 -> ../archive/pre-reference/notes/FIRMUS-QWEN235B-AIPERF-001-script.sha256
+l notes/FIRMUS-QWEN235B-PD-001-script.sha256 -> ../archive/pre-reference/notes/FIRMUS-QWEN235B-PD-001-script.sha256
+l notes/firmus-reference-scripts-20260928-052951.sha256 -> ../provenance/checksums/firmus-reference-scripts-20260928-052951.sha256
+l notes/firmus-reference-scripts-20260928-052951.stat -> ../provenance/environment/firmus-reference-scripts-20260928-052951.stat
+l notes/latest-firmus-reference-snapshot.txt -> ../external/firmus-reference/legacy-snapshot-pointer.txt
+l notes/official-repo-state-before-235b.txt -> ../archive/pre-reference/notes/official-repo-state-before-235b.txt
+l notes/slurm-launch-capabilities.txt -> ../archive/pre-reference/notes/slurm-launch-capabilities.txt
+l notes/slurm-step-binding-semantics.txt -> ../archive/pre-reference/notes/slurm-step-binding-semantics.txt
+l reference-scripts/firmus-20260928-052951 -> ../external/firmus-reference/firmus-20260928-052951
+l results/run-19782 -> ../archive/pre-reference/runs/run-19782
+l results/run-19794 -> ../archive/pre-reference/runs/run-19794
+l scripts/aiperf-vanilla-235b.sbatch -> ../archive/pre-reference/scripts/aiperf-vanilla-235b.sbatch
+l scripts/baseline-235b-pd-8plus8.sbatch -> ../archive/pre-reference/scripts/baseline-235b-pd-8plus8.sbatch

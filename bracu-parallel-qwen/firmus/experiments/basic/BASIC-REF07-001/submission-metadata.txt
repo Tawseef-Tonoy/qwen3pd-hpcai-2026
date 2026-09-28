@@ -1,0 +1,9 @@
+experiment=BASIC-REF07-001
+jobid=20003
+submitted_at=2026-09-28T06:40:09+00:00
+submit_host=login.hpcai2025.smc
+submit_dir=/home/apacsc04/bracu-parallel-qwen/runs/basic/BASIC-REF07-001
+script=/home/apacsc04/bracu-parallel-qwen/experiments/basic/BASIC-REF07-001/submitted-script.sbatch
+script_sha256=5f10055bec0c1fd61527fed6cdca08bd9ad5f07e546ef8529cbbe51c7e4d3dea
+source_ref07_sha256=5f10055bec0c1fd61527fed6cdca08bd9ad5f07e546ef8529cbbe51c7e4d3dea
+controlled_change=NONE

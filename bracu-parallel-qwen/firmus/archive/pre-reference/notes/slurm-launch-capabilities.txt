@@ -1,0 +1,48 @@
+=== DATE ===
+Sun Sep 27 04:18:06 UTC 2026
+
+=== SLURM TASK / RESOURCE CONFIG ===
+MpiDefault              = (null)
+ProctrackType           = proctrack/cgroup
+SelectType              = select/cons_tres
+SelectTypeParameters    = CR_CORE_MEMORY
+TaskPlugin              = task/cgroup,task/affinity
+TaskPluginParam         = (null type)
+
+=== SRUN OPTIONS WE CARE ABOUT ===
+      --gres=list             required generic resources per node
+      --gres-flags=opts       flags related to GRES management
+      --ntasks-per-node=n     number of tasks to invoke on each node
+      --overlap               Allow other steps to overlap this step
+  -w, --nodelist=hosts...     request a specific list of hosts
+      --exact                 use only the resources requested for the step
+      --exclusive[=type]      for job allocation, this allocates nodes in
+      --gpu-bind=...          task to gpu binding options
+      --gpus-per-node=n       number of GPUs required per allocated node
+      --gpus-per-task=n       number of GPUs required per spawned task
+
+=== HPC-AI PARTITION ===
+PartitionName=hpcai
+   AllocNodes=ALL Default=YES QoS=N/A
+   DefaultTime=00:10:00 DisableRootJobs=NO Exclusive=NODE GraceTime=0 Hidden=NO
+   MaxNodes=UNLIMITED MaxTime=00:17:00 MinNodes=0 LLN=NO MaxCPUsPerNode=UNLIMITED MaxCPUsPerSocket=UNLIMITED
+   Nodes=g[1,4]
+   PriorityJobFactor=1 PriorityTier=1 RootOnly=NO ReqResv=NO OverSubscribe=NO
+   State=UP TotalCPUs=256 TotalNodes=2 SelectTypeParameters=NONE
+   DefMemPerNode=UNLIMITED MaxMemPerNode=UNLIMITED
+
+=== COMPUTE NODE NAMES ===
+g1
+g4
+
+=== HOSTNAME RESOLUTION ===
+--- g1 ---
+198.18.151.51   STREAM g1
+198.18.151.51   DGRAM  
+198.18.151.51   RAW    
+198.18.151.51   g1 g1.hpcai2025.smc
+--- g4 ---
+198.18.151.54   STREAM g4
+198.18.151.54   DGRAM  
+198.18.151.54   RAW    
+198.18.151.54   g4 g4.hpcai2025.smc

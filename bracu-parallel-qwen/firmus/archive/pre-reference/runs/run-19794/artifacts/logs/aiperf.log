@@ -1,0 +1,6 @@
+2026-09-27 14:23:34.069 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-27 14:23:34.086 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer /scratch/models/Qwen3-235B-A22B-Instruct-2507-FP8 detected
+2026-09-27 14:23:34.086 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-27 14:23:34.087 - aiperf.config.resolution.resolvers - INFO - Prefetching 1 tokenizer into HF cache...
+2026-09-27 14:23:35.373 - aiperf.config.resolution.resolvers - INFO -   Cached /scratch/models/Qwen3-235B-A22B-Instruct-2507-FP8 (1.28s)
+2026-09-27 14:23:35.378 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer cached • 1.3s

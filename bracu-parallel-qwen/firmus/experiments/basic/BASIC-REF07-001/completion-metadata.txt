@@ -1,0 +1,8 @@
+experiment=BASIC-REF07-001
+jobid=20003
+frozen_at=2026-09-28T07:05:15+00:00
+result=REFERENCE_CONTROL_COMPLETED
+slurm_state=COMPLETED
+slurm_exit_code=0:0
+aiperf_runs=5/5
+controlled_change_from_ref07=NONE

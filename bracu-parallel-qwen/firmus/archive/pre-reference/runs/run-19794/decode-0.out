@@ -1,0 +1,87 @@
+=== DECODE 0 ===
+Sun Sep 27 06:18:15 AM UTC 2026
+g4
+SLURM_PROCID=0
+SLURM_LOCALID=0
+CUDA_VISIBLE_DEVICES=0,1,2,3
+UCX_NET_DEVICES=mlx5_0:1
+PORT=30200
+GPU 0: NVIDIA H200 (UUID: GPU-60d94661-1b30-2134-30f5-3033e0e37a7e)
+GPU 1: NVIDIA H200 (UUID: GPU-67695c27-0cd6-6242-11ba-6ae4d8cbc4ed)
+GPU 2: NVIDIA H200 (UUID: GPU-ba78cf90-19bb-9f3b-6f66-84546ef62efc)
+GPU 3: NVIDIA H200 (UUID: GPU-1b420577-b96a-0c5b-861a-0b9827f50edb)
+torch.cuda.device_count=4
+2026-09-27 14:21:16 NIXL INFO    _api.py:268 Initialized NIXL agent: 6be35c0a-c570-4063-96e1-4a33481f56d5
+2026-09-27 14:21:16 NIXL INFO    _api.py:268 Initialized NIXL agent: b191d84e-b7f7-4a2d-8bbd-0609bfbc1b10
+2026-09-27 14:21:16 NIXL INFO    _api.py:268 Initialized NIXL agent: 5d29442e-e48b-4104-856c-b50f64ee690f
+2026-09-27 14:21:16 NIXL INFO    _api.py:268 Initialized NIXL agent: 8a9fe8c9-1684-4286-b506-6a567611d439
+2026-09-27 14:21:17 NIXL INFO    _api.py:390 Backend UCX was instantiated
+2026-09-27 14:21:17 NIXL INFO    _api.py:390 Backend UCX was instantiated
+2026-09-27 14:21:17 NIXL INFO    _api.py:390 Backend UCX was instantiated
+2026-09-27 14:21:17 NIXL INFO    _api.py:390 Backend UCX was instantiated
+[2026-09-27 14:21:22] INFO:     127.0.0.1:60958 - "GET /model_info HTTP/1.1" 200 OK
+[2026-09-27 14:21:26] INFO:     127.0.0.1:60972 - "POST /generate HTTP/1.1" 200 OK
+[2026-09-27 14:22:21] INFO:     198.18.151.51:54540 - "GET /health HTTP/1.1" 200 OK
+[2026-09-27 14:23:03] INFO:     198.18.151.51:43650 - "PRI %2A HTTP/2.0" 404 Not Found
+[2026-09-27 14:23:03] INFO:     198.18.151.51:43666 - "PRI %2A HTTP/2.0" 404 Not Found
+[2026-09-27 14:23:04] INFO:     198.18.151.51:43638 - "GET /health HTTP/1.1" 200 OK
+[2026-09-27 14:23:04] INFO:     198.18.151.51:43676 - "GET /server_info HTTP/1.1" 200 OK
+[2026-09-27 14:23:04] INFO:     198.18.151.51:43676 - "GET /model_info HTTP/1.1" 200 OK
+[2026-09-27 14:23:28] INFO:     198.18.151.51:51854 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:28] INFO:     198.18.151.51:51854 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:29] INFO:     198.18.151.51:51854 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:29] INFO:     198.18.151.51:51854 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:29] INFO:     198.18.151.51:51854 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:29] INFO:     198.18.151.51:51854 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:30] INFO:     198.18.151.51:51854 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:30] INFO:     198.18.151.51:51854 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:30] INFO:     198.18.151.51:51854 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:30] INFO:     198.18.151.51:51854 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:30] INFO:     198.18.151.51:51854 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:31] INFO:     198.18.151.51:51854 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:31] INFO:     198.18.151.51:51854 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:31] INFO:     198.18.151.51:51854 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:52] INFO:     198.18.151.51:53924 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:53] INFO:     198.18.151.51:53932 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:53] INFO:     198.18.151.51:53936 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:53] INFO:     198.18.151.51:53938 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:53] INFO:     198.18.151.51:53954 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:54] INFO:     198.18.151.51:53968 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:54] INFO:     198.18.151.51:53976 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:54] INFO:     198.18.151.51:53988 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:54] INFO:     198.18.151.51:54000 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:54] INFO:     198.18.151.51:54016 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:54] INFO:     198.18.151.51:54028 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:55] INFO:     198.18.151.51:54018 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:55] INFO:     198.18.151.51:54030 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:55] INFO:     198.18.151.51:54040 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:55] INFO:     198.18.151.51:54046 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:55] INFO:     198.18.151.51:54060 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:23:59] INFO:     198.18.151.51:54060 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:01] INFO:     198.18.151.51:54060 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:04] INFO:     198.18.151.51:54060 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:04] INFO:     198.18.151.51:41694 - "GET /health HTTP/1.1" 200 OK
+[2026-09-27 14:24:06] INFO:     198.18.151.51:54060 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:27] INFO:     198.18.151.51:53752 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:28] INFO:     198.18.151.51:53744 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:28] INFO:     198.18.151.51:53754 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:28] INFO:     198.18.151.51:53768 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:28] INFO:     198.18.151.51:53780 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:29] INFO:     198.18.151.51:53788 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:29] INFO:     198.18.151.51:53802 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:29] INFO:     198.18.151.51:53804 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:29] INFO:     198.18.151.51:53816 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:29] INFO:     198.18.151.51:53818 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:30] INFO:     198.18.151.51:53820 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:30] INFO:     198.18.151.51:53828 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:30] INFO:     198.18.151.51:53838 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:30] INFO:     198.18.151.51:53848 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:30] INFO:     198.18.151.51:53860 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:30] INFO:     198.18.151.51:53862 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:34] INFO:     198.18.151.51:53862 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:36] INFO:     198.18.151.51:53862 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:39] INFO:     198.18.151.51:53862 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:41] INFO:     198.18.151.51:53862 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:44] INFO:     198.18.151.51:53862 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:24:46] INFO:     198.18.151.51:53862 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+[2026-09-27 14:25:04] INFO:     198.18.151.51:39640 - "GET /health HTTP/1.1" 200 OK
