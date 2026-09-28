@@ -1,0 +1,7 @@
+{
+  "mode": "exploratory",
+  "warmup_contamination_detected": true,
+  "status": "NO_VALID_POINT",
+  "best_concurrency": 30,
+  "next_action": "No tested point is SLA-valid. Best steady-state candidate is C30; dominant limitation: TTFT / pre-first-token."
+}
