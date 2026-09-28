@@ -113,3 +113,57 @@ Pending.
 ## Decision
 
 Pending.
+
+## Results
+
+Job: 20067
+
+Official benchmark:
+- concurrency: 48
+- warmup: 60 s
+- benchmark: 120 s
+- grace: 30 s
+
+Headline results:
+- request throughput: 2.70 req/s
+- output token throughput: 540.86 tokens/s
+- goodput: 0.93 req/s
+- approximate good-request fraction: ~0.34
+
+TTFT:
+- avg: 14357.65 ms
+- p50: 20766.23 ms
+- p90: 26965.51 ms
+- p99: 27331.58 ms
+
+ITL:
+- avg: 14.97 ms
+- p90: 17.27 ms
+- p99: 18.52 ms
+
+Effective concurrency:
+- total avg: 46.89
+- prefill avg: 38.83
+- decode avg: 8.06
+
+## Interpretation
+
+REF07 at C48 is not a viable official configuration.
+
+The dominant bottleneck is the pre-first-token path. ITL remains within
+the 20 ms SLA even at p99, while TTFT exceeds the 3000 ms SLA by a very
+large margin.
+
+The long official run exposes substantial queue accumulation that was not
+visible in the shorter exploratory C48 run.
+
+The next experiment should target additional Prefill-side capacity rather
+than Decode optimization.
+
+## Decision
+
+FAIL.
+
+Do not use REF07 C48 as the final baseline.
+
+Next: inspect organizer REF08 (12+4) and design a controlled comparison.

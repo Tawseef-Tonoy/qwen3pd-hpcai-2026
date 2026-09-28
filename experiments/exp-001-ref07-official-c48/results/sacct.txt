@@ -1,0 +1,13 @@
+JobID           JobName      State    Elapsed  Timelimit ExitCode 
+------------ ---------- ---------- ---------- ---------- -------- 
+20067        p4-tp2-d2+  COMPLETED   00:09:42   00:17:00      0:0 
+20067.batch       batch  COMPLETED   00:09:42                 0:0 
+20067.extern     extern  COMPLETED   00:09:46                 0:0 
+20067.0            bash CANCELLED+   00:09:47                 0:9 
+20067.1            bash CANCELLED+   00:09:47                 0:9 
+20067.2            bash CANCELLED+   00:09:47                 0:9 
+20067.3            bash CANCELLED+   00:09:47                 0:9 
+20067.4            bash CANCELLED+   00:09:43                 0:9 
+20067.5            bash CANCELLED+   00:09:43                 0:9 
+20067.6         python3 CANCELLED+   00:04:41                 0:9 
+20067.7          aiperf  COMPLETED   00:04:01                 0:0 
