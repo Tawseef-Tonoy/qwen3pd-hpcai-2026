@@ -288,7 +288,29 @@ def analyze_run(
         run_dir / "profile_export_aiperf.csv"
     )
 
+    # Resolve actual AIPerf profiling duration.
+    #
+    # For sweep runs AIPerf may place benchmark_duration_avg in:
+    # results/aggregate/concurrency_N/profile_export_aiperf_aggregate.csv
+    #
+    # rather than in the per-run export.
     duration = csv_metrics.get("benchmark_duration_avg")
+
+    concurrency = detect_concurrency(run_dir)
+
+    if duration is None and concurrency is not None:
+        aggregate_csv = (
+            run_dir.parent
+            / "aggregate"
+            / f"concurrency_{concurrency}"
+            / "profile_export_aiperf_aggregate.csv"
+        )
+
+        aggregate_metrics = read_csv_metrics(aggregate_csv)
+
+        duration = aggregate_metrics.get(
+            "benchmark_duration_avg"
+        )
 
     goodput = None
     good_tokens = None
@@ -553,13 +575,13 @@ def make_decision(results, mode, target_gfr):
                 )
 
                 decision["next_action"] = (
-                    f"Steady-state SLA knee is bracketed between "
+                    f"Exploratory SLA knee is bracketed between "
                     f"C{lo} and C{hi}. Fine-sweep "
                     f"{candidate_text} with stronger warm-up control."
                 )
             else:
                 decision["next_action"] = (
-                    f"Steady-state SLA knee lies between "
+                    f"Exploratory SLA knee lies between "
                     f"C{lo} and C{hi}. Test an intermediate "
                     "concurrency."
                 )
@@ -567,7 +589,7 @@ def make_decision(results, mode, target_gfr):
         else:
             decision["next_action"] = (
                 f"C{highest['concurrency']} is the highest tested "
-                "steady-state SLA-valid point. Test slightly higher "
+                "exploratory SLA-pass proxy. Test slightly higher "
                 "concurrency before official validation."
             )
 
@@ -684,7 +706,7 @@ def write_report(
 
     if decision["warmup_contamination_detected"]:
         lines.append(
-            "- Strong warm-up/transient behavior was detected. "
+            "- Strong temporal non-stationarity was detected, consistent with startup/warm-up effects. "
             "Whole-run exploratory GFR should not be treated as "
             "steady-state performance."
         )

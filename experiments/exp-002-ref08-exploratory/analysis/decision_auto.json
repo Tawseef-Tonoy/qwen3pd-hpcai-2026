@@ -1,0 +1,7 @@
+{
+  "mode": "exploratory",
+  "warmup_contamination_detected": true,
+  "status": "EXPLORE",
+  "best_concurrency": 32,
+  "next_action": "Exploratory SLA knee is bracketed between C32 and C40. Fine-sweep C34, C36, C38 with stronger warm-up control."
+}

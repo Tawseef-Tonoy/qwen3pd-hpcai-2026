@@ -206,7 +206,7 @@ def show_decision(path):
         else GREEN + "NO" + RESET
     )
 
-    print(f"Warm-up contamination   : {warmup_text}")
+    print(f"Temporal/startup effects: {warmup_text}")
 
     candidate = decision.get("best_concurrency")
 

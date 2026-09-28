@@ -168,3 +168,35 @@ Decision:
 
 Continue with REF08 and perform a finer concurrency search with longer
 warm-up before conducting the next official-duration validation.
+
+---
+
+# Verified Final Analysis
+
+The final analysis uses profiling-phase records only.
+
+Verified profiling request counts:
+
+- C8: 39
+- C16: 101
+- C32: 171
+- C40: 453
+- C48: 504
+
+Key warmed/second-half diagnostic results:
+
+- C32: TTFT pass 95.3%, ITL pass 100%
+- C40: TTFT pass 100%, ITL pass 42.7%
+- C48: TTFT pass 97.6%, ITL pass 19.4%
+
+Strong temporal non-stationarity was observed, consistent with
+startup/warm-up effects.
+
+Final decision:
+
+- retain REF08
+- C32 is below the observed Decode knee
+- C40 is above the observed Decode knee
+- search C34/C36/C38 next with stronger startup control
+
+See `REPORT.md` and `analysis/` for the authoritative final analysis.
