@@ -1,3 +1,13 @@
+#!/bin/bash
+#SBATCH -J exp013-c48-instrumented
+#SBATCH -p hpcai
+#SBATCH -N 2
+#SBATCH -t 00:17:00
+#SBATCH --gres=gpu:8
+#SBATCH --propagate=NONE
+#SBATCH -o runs/%j.out
+#SBATCH -e runs/%j.err
+
 # ============================================================
 # EXP-013
 # C48 instrumented control
