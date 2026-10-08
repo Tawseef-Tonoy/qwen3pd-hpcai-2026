@@ -1,0 +1,36 @@
+APAC HPC-AI 2026 — Qwen3 PD Inference
+
+Official submission run
+Job ID: 21863
+
+Platform:
+2 x HGX H200 nodes
+16 x NVIDIA H200 GPUs
+
+Serving configuration:
+Prefill: 4 workers x TP2 = 8 GPUs
+Decode:  2 workers x TP4/EP4 = 8 GPUs
+Prefill routing: round_robin
+Decode routing: round_robin
+Concurrency: 48
+
+Official benchmark:
+Warmup: 60 s
+Benchmark: 120 s
+Grace period: 30 s
+
+Results:
+Requests: 1189
+Good requests: 1128
+GFR: 94.87%
+
+Request throughput: 9.63 req/s
+Raw output throughput: 1925.63 tok/s
+Goodput: 9.13 req/s
+SLA-qualified output throughput: approximately 1826 tok/s
+
+Profiling phase:
+Completed: 1189
+Cancelled: 0
+Errors: 0
+Grace-period timeout: false
