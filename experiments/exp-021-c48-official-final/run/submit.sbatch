@@ -569,14 +569,16 @@ srun \
         --endpoint-type chat \
         --endpoint /v1/chat/completions \
         --streaming \
-        --concurrency "${N}" \
+          -H 'Accept: text/event-stream' \
+        --concurrency 48 \
+          --workers-max 48 \
         --api-key NOT_USED \
         --warmup-duration 60 \
-        --benchmark-duration 60 \
-        --benchmark-grace-period 15 \
-        --synthetic-input-tokens-mean "${ISL}" \
+        --benchmark-duration 120 \
+        --benchmark-grace-period 30 \
+        --synthetic-input-tokens-mean 4000 \
         --synthetic-input-tokens-stddev 0 \
-        --output-tokens-mean "${OSL}" \
+        --output-tokens-mean 200 \
         --output-tokens-stddev 0 \
         --num-dataset-entries 12800 \
         --random-seed 2026 \
