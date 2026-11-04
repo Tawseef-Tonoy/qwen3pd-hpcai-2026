@@ -1,0 +1,7 @@
+{
+  "mode": "official",
+  "warmup_contamination_detected": false,
+  "status": "PASS",
+  "best_concurrency": 40,
+  "next_action": "Official SLA passed. Use this as the current baseline and optimize for higher goodput while preserving GFR."
+}

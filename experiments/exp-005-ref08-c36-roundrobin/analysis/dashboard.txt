@@ -1,0 +1,58 @@
+
+Running analysis...
+
+
+==============================================================================================
+AIPERF SLA ANALYSIS
+==============================================================================================
+   C    REQ     GFR    TTFT%     ITL%    GOOD/s     TOK/s   2H-GFR               BOTTLENECK
+----------------------------------------------------------------------------------------------
+  36    952   0.038   100.0%     3.8%       N/A       N/A     3.4%             Decode / ITL
+
+Warm-up contamination: NO
+Status: FAIL
+Current candidate: C36
+
+NEXT ACTION:
+Official SLA failed. Dominant limitation: Decode / ITL. Optimize the corresponding serving path before another official validation.
+
+Generated:
+  /home/apacsc04/qwen3pd-hpcai-2026/experiments/exp-005-ref08-c36-roundrobin/analysis/summary_auto.csv
+  /home/apacsc04/qwen3pd-hpcai-2026/experiments/exp-005-ref08-c36-roundrobin/analysis/temporal_auto.csv
+  /home/apacsc04/qwen3pd-hpcai-2026/experiments/exp-005-ref08-c36-roundrobin/analysis/decision_auto.json
+  /home/apacsc04/qwen3pd-hpcai-2026/experiments/exp-005-ref08-c36-roundrobin/REPORT_AUTO.md
+
+Displaying decision dashboard...
+
+
+[1m[36m====================================================================================================[0m
+[1m[36mAIPerf Experiment Analysis — exp-005-ref08-c36-roundrobin[0m
+[1m[36m====================================================================================================[0m
+[2mPath: /home/apacsc04/qwen3pd-hpcai-2026/experiments/exp-005-ref08-c36-roundrobin[0m
+
+[1m1. FULL-RUN SLA SUMMARY[0m
+---------------------------------
+    C     Req   Cancel       GFR     TTFT%      ITL%     Good/s   Good tok/s     TTFT p90    ITL p90
+----------------------------------------------------------------------------------------------------
+   36     952        0     [31m0.038[0m    100.0%      3.8%        N/A          N/A        502.2      20.99
+
+[1m2. FIRST-HALF vs SECOND-HALF / WARM-UP ANALYSIS[0m
+---------------------------------------------------------
+    C       Segment       N     TTFT avg    TTFT pass    ITL avg    ITL pass       GFR
+--------------------------------------------------------------------------------------
+   36         first     476        527.6       100.0%      20.80        4.2%      4.2%
+   36        second     476        409.0       100.0%      20.80        3.4%      3.4%
+
+[1m3. AUTOMATIC DECISION[0m
+-------------------------------
+Status                  : [31m[1mFAIL[0m
+Temporal/startup effects: [32mNO[0m
+Current candidate        : C36
+
+[1mRecommended next action:[0m
+Official SLA failed. Dominant limitation: Decode / ITL. Optimize the corresponding serving path before another official validation.
+
+[1m[36m====================================================================================================[0m
+[1mEND OF ANALYSIS[0m
+[1m[36m====================================================================================================[0m
+

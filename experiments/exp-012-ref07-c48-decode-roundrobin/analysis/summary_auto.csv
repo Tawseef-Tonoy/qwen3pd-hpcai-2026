@@ -1,0 +1,2 @@
+concurrency,total,cancelled,missing,ttft_pass,ttft_pass_rate,itl_pass,itl_pass_rate,good,gfr,good_req_s,good_tok_s,request_throughput,output_token_throughput,ttft_avg,ttft_p50,ttft_p90,ttft_p99,itl_avg,itl_p50,itl_p90,itl_p99
+,689,0,0,689,1.0,689,1.0,689,1.0,,,,,536.1313791814221,384.561827,678.4566552000003,2782.2358706799996,18.93788882515387,19.11531291959799,19.380049161809044,19.489084340502508

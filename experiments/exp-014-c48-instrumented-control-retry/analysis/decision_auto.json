@@ -1,0 +1,7 @@
+{
+  "mode": "exploratory",
+  "warmup_contamination_detected": false,
+  "status": "EXPLORE",
+  "best_concurrency": 48,
+  "next_action": "C48 is the highest tested exploratory SLA-pass proxy. Test slightly higher concurrency before official validation."
+}

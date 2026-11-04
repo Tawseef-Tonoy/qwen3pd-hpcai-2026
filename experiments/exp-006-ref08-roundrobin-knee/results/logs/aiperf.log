@@ -1,0 +1,54 @@
+2026-09-29 03:44:15.396 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-29 03:44:15.396 - aiperf.cli_runner._multi_run - INFO - Starting Multi-Run Benchmark
+2026-09-29 03:44:15.396 - aiperf.cli_runner._multi_run - INFO -   Configurations: 4
+2026-09-29 03:44:15.397 - aiperf.cli_runner._multi_run - INFO -   Trials per config: 1
+2026-09-29 03:44:15.397 - aiperf.cli_runner._multi_run - INFO -   Total runs: 4
+2026-09-29 03:44:15.397 - aiperf.cli_runner._multi_run - INFO -   Confidence level: 95%
+2026-09-29 03:44:15.397 - aiperf.cli_runner._multi_run - INFO -   Cooldown between runs: 0.0s
+2026-09-29 03:44:15.397 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-29 03:44:15.398 - aiperf.cli_runner._multi_run - INFO -   Estimated duration: 380s
+2026-09-29 03:44:15.399 - aiperf.orchestrator.orchestrator - INFO - Starting multi-run benchmark (repeated): 1 trials x 4 variations
+2026-09-29 03:44:15.399 - aiperf.orchestrator.orchestrator - INFO - [v0 t0] Executing run_0001...
+2026-09-29 03:44:16.126 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-29 03:44:16.144 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer Qwen/Qwen3-235B-A22B-Instruct-2507 detected
+2026-09-29 03:44:16.144 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-29 03:44:16.146 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['Qwen/Qwen3-235B-A22B-Instruct-2507']
+2026-09-29 03:46:17.394 - aiperf.orchestrator.orchestrator - INFO - [v1 t0] Executing run_0001...
+2026-09-29 03:46:18.161 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-29 03:46:18.179 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer Qwen/Qwen3-235B-A22B-Instruct-2507 detected
+2026-09-29 03:46:18.179 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-29 03:46:18.181 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['Qwen/Qwen3-235B-A22B-Instruct-2507']
+2026-09-29 03:48:09.717 - aiperf.orchestrator.orchestrator - INFO - [v2 t0] Executing run_0001...
+2026-09-29 03:48:10.475 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-29 03:48:10.492 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer Qwen/Qwen3-235B-A22B-Instruct-2507 detected
+2026-09-29 03:48:10.493 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-29 03:48:10.494 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['Qwen/Qwen3-235B-A22B-Instruct-2507']
+2026-09-29 03:49:55.752 - aiperf.orchestrator.orchestrator - INFO - [v3 t0] Executing run_0001...
+2026-09-29 03:49:56.517 - aiperf.cli_runner._single_run - INFO - Starting AIPerf System
+2026-09-29 03:49:56.535 - aiperf.config.resolution.resolvers - INFO - [OK] Tokenizer Qwen/Qwen3-235B-A22B-Instruct-2507 detected
+2026-09-29 03:49:56.535 - aiperf.config.resolution.resolvers - INFO - 1 tokenizer validated | 0.0s
+2026-09-29 03:49:56.536 - aiperf.config.resolution.resolvers - INFO - HF cache hit (skipping prefetch): ['Qwen/Qwen3-235B-A22B-Instruct-2507']
+2026-09-29 03:51:41.479 - aiperf.orchestrator.orchestrator - INFO - Repeated mode complete: 4/4 runs successful
+2026-09-29 03:51:41.480 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-29 03:51:41.480 - aiperf.cli_runner._multi_run - INFO - ================================================================================
+2026-09-29 03:51:41.481 - aiperf.cli_runner._multi_run - INFO - Computing aggregate statistics...
+2026-09-29 03:51:41.654 - aiperf.orchestrator.aggregation.confidence - WARNING - ConfidenceAggregation: only 1 successful run (num_successful=1 / total=1); reporting point estimates with std=0 and CI collapsed to the mean. Set num_profile_runs >= 2 for meaningful confidence intervals.
+2026-09-29 03:51:41.670 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_30/profile_export_aiperf_aggregate.csv
+2026-09-29 03:51:41.670 - AggregateSweepCsvExporter - INFO - Exported aggregate data to: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/sweep_aggregate/profile_export_aiperf_sweep.csv
+2026-09-29 03:51:41.670 - AggregateSweepJsonExporter - INFO - Exported aggregate data to: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/sweep_aggregate/profile_export_aiperf_sweep.json
+2026-09-29 03:51:41.670 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_30/profile_export_aiperf_aggregate.json
+2026-09-29 03:51:41.671 - aiperf.cli_runner._multi_run - INFO - Sweep aggregate JSON written to: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/sweep_aggregate/profile_export_aiperf_sweep.json
+2026-09-29 03:51:41.671 - aiperf.cli_runner._multi_run - INFO - Sweep aggregate CSV written to: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/sweep_aggregate/profile_export_aiperf_sweep.csv
+2026-09-29 03:51:41.671 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=30) JSON: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_30/profile_export_aiperf_aggregate.json; CSV: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_30/profile_export_aiperf_aggregate.csv
+2026-09-29 03:51:41.671 - aiperf.orchestrator.aggregation.confidence - WARNING - ConfidenceAggregation: only 1 successful run (num_successful=1 / total=1); reporting point estimates with std=0 and CI collapsed to the mean. Set num_profile_runs >= 2 for meaningful confidence intervals.
+2026-09-29 03:51:41.680 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_32/profile_export_aiperf_aggregate.json
+2026-09-29 03:51:41.680 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_32/profile_export_aiperf_aggregate.csv
+2026-09-29 03:51:41.680 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=32) JSON: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_32/profile_export_aiperf_aggregate.json; CSV: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_32/profile_export_aiperf_aggregate.csv
+2026-09-29 03:51:41.680 - aiperf.orchestrator.aggregation.confidence - WARNING - ConfidenceAggregation: only 1 successful run (num_successful=1 / total=1); reporting point estimates with std=0 and CI collapsed to the mean. Set num_profile_runs >= 2 for meaningful confidence intervals.
+2026-09-29 03:51:41.689 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_34/profile_export_aiperf_aggregate.json
+2026-09-29 03:51:41.689 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_34/profile_export_aiperf_aggregate.csv
+2026-09-29 03:51:41.690 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=34) JSON: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_34/profile_export_aiperf_aggregate.json; CSV: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_34/profile_export_aiperf_aggregate.csv
+2026-09-29 03:51:41.690 - aiperf.orchestrator.aggregation.confidence - WARNING - ConfidenceAggregation: only 1 successful run (num_successful=1 / total=1); reporting point estimates with std=0 and CI collapsed to the mean. Set num_profile_runs >= 2 for meaningful confidence intervals.
+2026-09-29 03:51:41.698 - AggregateConfidenceCsvExporter - INFO - Exported aggregate data to: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_36/profile_export_aiperf_aggregate.csv
+2026-09-29 03:51:41.699 - AggregateConfidenceJsonExporter - INFO - Exported aggregate data to: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_36/profile_export_aiperf_aggregate.json
+2026-09-29 03:51:41.699 - aiperf.cli_runner._multi_run - INFO - Per-variation aggregate (phases.profiling.concurrency=36) JSON: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_36/profile_export_aiperf_aggregate.json; CSV: /home/apacsc04/qwen3pd-hpcai-2026/runs/20149/aggregate/concurrency_36/profile_export_aiperf_aggregate.csv

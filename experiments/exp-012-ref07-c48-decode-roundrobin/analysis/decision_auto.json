@@ -1,0 +1,7 @@
+{
+  "mode": "exploratory",
+  "warmup_contamination_detected": false,
+  "status": "EXPLORE",
+  "best_concurrency": null,
+  "next_action": "CNone is the highest tested exploratory SLA-pass proxy. Test slightly higher concurrency before official validation."
+}

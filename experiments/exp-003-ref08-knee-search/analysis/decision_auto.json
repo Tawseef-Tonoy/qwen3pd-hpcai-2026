@@ -1,0 +1,7 @@
+{
+  "mode": "exploratory",
+  "warmup_contamination_detected": true,
+  "status": "EXPLORE",
+  "best_concurrency": 36,
+  "next_action": "Exploratory SLA knee lies between C36 and C38. Test an intermediate concurrency."
+}

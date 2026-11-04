@@ -1,0 +1,66 @@
+
+Running analysis...
+
+
+==============================================================================================
+AIPERF SLA ANALYSIS
+==============================================================================================
+   C    REQ     GFR    TTFT%     ITL%    GOOD/s     TOK/s   2H-GFR               BOTTLENECK
+----------------------------------------------------------------------------------------------
+  32    107   0.570    57.0%   100.0%     0.963     192.6    68.5%   TTFT / pre-first-token
+  36    535   0.970   100.0%    97.0%     8.206    1641.1   100.0%                SLA-valid
+  40    591   0.966   100.0%    96.6%     8.954    1790.8   100.0%                SLA-valid
+
+Warm-up contamination: YES
+Status: EXPLORE
+Current candidate: C40
+
+NEXT ACTION:
+C40 is the highest tested exploratory SLA-pass proxy. Test slightly higher concurrency before official validation.
+
+Generated:
+  /home/apacsc04/qwen3pd-hpcai-2026/experiments/exp-009-ref07-8p8d-roundrobin/analysis/summary_auto.csv
+  /home/apacsc04/qwen3pd-hpcai-2026/experiments/exp-009-ref07-8p8d-roundrobin/analysis/temporal_auto.csv
+  /home/apacsc04/qwen3pd-hpcai-2026/experiments/exp-009-ref07-8p8d-roundrobin/analysis/decision_auto.json
+  /home/apacsc04/qwen3pd-hpcai-2026/experiments/exp-009-ref07-8p8d-roundrobin/REPORT_AUTO.md
+
+Displaying decision dashboard...
+
+
+[1m[36m====================================================================================================[0m
+[1m[36mAIPerf Experiment Analysis — exp-009-ref07-8p8d-roundrobin[0m
+[1m[36m====================================================================================================[0m
+[2mPath: /home/apacsc04/qwen3pd-hpcai-2026/experiments/exp-009-ref07-8p8d-roundrobin[0m
+
+[1m1. FULL-RUN SLA SUMMARY[0m
+---------------------------------
+    C     Req   Cancel       GFR     TTFT%      ITL%     Good/s   Good tok/s     TTFT p90    ITL p90
+----------------------------------------------------------------------------------------------------
+   32     107        0     [31m0.570[0m     57.0%    100.0%      0.963        192.6      51343.5      18.33
+   36     535        0     [32m0.970[0m    100.0%     97.0%      8.206       1641.1        996.3      18.74
+   40     591        0     [32m0.966[0m    100.0%     96.6%      8.954       1790.8        762.0      18.70
+
+[1m2. FIRST-HALF vs SECOND-HALF / WARM-UP ANALYSIS[0m
+---------------------------------------------------------
+    C       Segment       N     TTFT avg    TTFT pass    ITL avg    ITL pass       GFR
+--------------------------------------------------------------------------------------
+   32         first      53      25516.5        45.3%      15.66      100.0%     45.3%
+   32        second      54       5549.7        68.5%      15.32      100.0%     68.5%
+   36         first     267        716.2       100.0%      17.97       94.0%     94.0%
+   36        second     268        418.7       100.0%      17.98      100.0%    100.0%
+   40         first     295        667.6       100.0%      18.46       93.2%     93.2%
+   40        second     296        380.4       100.0%      18.48      100.0%    100.0%
+
+[1m3. AUTOMATIC DECISION[0m
+-------------------------------
+Status                  : [33m[1mEXPLORE[0m
+Temporal/startup effects: [33mYES[0m
+Current candidate        : C40
+
+[1mRecommended next action:[0m
+C40 is the highest tested exploratory SLA-pass proxy. Test slightly higher concurrency before official validation.
+
+[1m[36m====================================================================================================[0m
+[1mEND OF ANALYSIS[0m
+[1m[36m====================================================================================================[0m
+
